@@ -40,6 +40,7 @@ body {
     display: none;
     animation: fadeIn 0.5s forwards;
     border-radius: 0 10px 10px 0;
+    
 }
 
 
@@ -76,14 +77,9 @@ body {
 }
 
 @media(max-width:768px){
-    ul {
-        display:flex;
-        justify-content: space-between;
-    }
-
-    #fixedBox{
-        padding:2rem;
-        border-radius: 10px;
+    #fixedBox {
+        position: fixed;
+        bottom:5rem;
     }
 }
 
@@ -394,18 +390,6 @@ select {
     transition: 0.3s;
 }
 
-#surveyName {
-    border:0;
-    width:80%;
-}
-
-#surveyName:hover{
-    outline:0;
-    border-bottom: 1.5px solid #341198;
-    transition:0.3s;
-}
-
-
 input[type="checkbox"] {
     appearance: none;
     background-color: #ffffff;
@@ -518,15 +502,18 @@ input[type="text"]:focus {
     .add-option-btn, .overlay-btn-reset {
         width: 100%;
     }
+
     #fixedBox {
         position: fixed; 
+        display: flex;
         bottom: 0;
-        flex-direction: row;
-        height: 2rem;
+        flex-direction: column;
+        height: 1rem;
         width: 100%;
         justify-content: center; 
         align-items: center; 
         gap: 10px;
+        width:18rem;
     }
 }
 
